@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(./galaxy.jpg);
+}
+#game{
+	max-height: 100vh;
+	width: 300px;
+	height: 650px;
+	margin: auto;
+	box-sizing: border-box;
+	background-image: url(./sky.jpg);
+}
+#character{
+	/* background-color: red; */
+	position: relative;
+	top: 420px;
+	left: 100px;
+}
+#block{
+	width: 100px;
+	height: 50px;
+	/* background-color: black; */
+	top: 500px;
+	position: relative;
+	animation: slide 1.5s infinite;
+}
+@keyframes slide{
+	0%{top: -100px};
+	100%{top: 400px};
+}
+#white{
+	width: 298px;
+	height: 10px;
+	position: absolute;
+	top: 500px;
+	background-color: transparent;
+	z-index: 100000;
+}
+#left, #right{
+	width: 50%;
+	position: absolute;
+	height: 500px;
+}
+#right{
+	left: 50%;
+}
